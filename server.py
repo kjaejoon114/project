@@ -18,7 +18,7 @@ def run_server(port=4000):
 
         
         
-        conn.sendall(msg[::-1])
+        conn.sendall(msg[::-1]) ## client에서 보내준 문자열을 거꾸로 만들어주는 코드
         conn.close()
 
 if __name__ == "__main__":
